@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body,html{
+    padding: 0;
+    margin: 0;
+    background-image: url(./img/fondo_kaikei2.svg);
+    background-size: cover;
+    background-position:bottom;
+    background-repeat:repeat;
+    animation: rotate 8s infinite alternate linear;
+    height: 100%;
+}
+
+@keyframes rotate{
+    100% {background-position: 15% 20%;}
+}
+*{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;}
+
+input{
+    margin-bottom: 10px;
+    background-color: white;
+    
+}
+
+button{
+    background-color: white;
+}
+
+.contenedor{
+    background-color: rgba(240, 248, 255, 0.175);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+a.titulo{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.encabezado{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+.cab{
+    display:flex;
+    align-content: center;
+    text-align: center;
+}
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (max-width: 480px) {
+    
+    /* CSS */
+
+    a,h1{
+        text-decoration: none;
+        font-size: 50%;
+        width: 100%;
+        font-weight: bold;
+    }
+     
+  }
+
