@@ -13,7 +13,7 @@
     ?>
 
     <div class="contenedor">
-        <a class="titulo" href="create.html">CREAR</a>
+        <a class="titulo" href="create1.php">CREAR</a>
         <a class="titulo" href="read.php">LISTAR</a>
         <a class="titulo" href="read.php">ELIMINAR</a>
     </div>

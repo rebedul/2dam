@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
     <?php
+        include("header.html");
+
        //include("con_db.php");
        //otro procedimiento que sustituya a 'include'
        require_once("con_db.php");

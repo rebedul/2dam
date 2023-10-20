@@ -1,6 +1,8 @@
 <?php
 
 include("con_db.php");
+$conexion = mysqli_connect($servidor,$usuario,$pass,$db);
+
 
 echo '<link href="/css/style.css" type="text/css" rel="stylesheet">';
 
@@ -38,7 +40,7 @@ if ($resultado){
     echo "Registro ".$username." grabado correctamente<br>";
     echo "</p>";
     echo "Regresando al formulario...";
-    header("Refresh:3; url=create.html");    
+    header("Refresh:0; url=create1.php");    
     }
 
 

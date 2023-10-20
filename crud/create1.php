@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form action="create.php" method="post">
+    <?php
+    include("header.html");
+    ?>
+
+    <form action="create2.php" method="post">
         <input type="text" name="username" placeholder="Nombre"><br>
         <input type="password" name="password" placeholder="contraseña"><br>
         <input type="text" name="name" placeholder="Nombre propio"><br>
