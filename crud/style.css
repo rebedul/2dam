@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+*{
+  font-family: 'Roboto', sans-serif;}
+
 body,html{
     padding: 0;
     margin: 0;
@@ -14,9 +17,6 @@ body,html{
 @keyframes rotate{
     100% {background-position: 15% 20%;}
 }
-*{
-    margin: 10px;
-    font-family: 'Roboto', sans-serif;}
 
 input{
     margin-bottom: 10px;
@@ -69,8 +69,11 @@ table{
   color: white;
   display: flex;
   justify-content: center;
-
+  border: 2px;
+  border-style: solid;
+  border-color: white;
 }
+
 /* Altura cuadro búsqueda */
 .form-control, .me-2{
   margin-top: 10px;
@@ -79,8 +82,26 @@ table{
 
 .container-fluid{
   height: 35px;
-
 }
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+.micontenedor{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  ali: center;
+}
+
+.createcon{
+  margin:20px;
+  display: flex;
+  justify-content: center;
+}
+
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px

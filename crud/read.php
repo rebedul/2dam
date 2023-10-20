@@ -16,27 +16,27 @@
        require_once("con_db.php");
        $conexion = mysqli_connect($servidor,$usuario,$pass,$db);
     ?>
-    <table border=1>
+    <table>
         <tr>
             <th>Usuario</th>
             <th>Contraseña</th>
             <th>NombrePropio</th>
             <th>Apellidos</th>
         </tr>
-    <?php
-        $sql = "SELECT * from USUARIOS order by username";
-        $resul = mysqli_query($conexion,$sql);
-        while ($fila = mysqli_fetch_array($resul)){
-    ?>
-    <tr>
-        <td><?php echo $fila['username']; ?></td>
-        <td><?php echo $fila['password']; ?></td>
-        <td><?php echo $fila['fname']; ?></td>
-        <td><?php echo $fila['lname']; ?></td>
-    </tr>
-    <?php
-    }
-    ?>
+        <?php
+            $sql = "SELECT * from USUARIOS order by username";
+            $resul = mysqli_query($conexion,$sql);
+            while ($fila = mysqli_fetch_array($resul)){
+        ?>
+                <tr>
+                    <td><?php echo $fila['username']; ?></td>
+                    <td><?php echo $fila['password']; ?></td>
+                    <td><?php echo $fila['fname']; ?></td>
+                    <td><?php echo $fila['lname']; ?></td>
+                </tr>
+                <?php
+                    }
+                ?>
     </table>
          
 </body>

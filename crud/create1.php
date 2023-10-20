@@ -11,6 +11,11 @@
     include("header.html");
     ?>
 
+ <h1>ALTAS</h1>
+   
+<div class="createcon">
+<br>
+<br>
     <form action="create2.php" method="post">
         <input type="text" name="username" placeholder="Nombre"><br>
         <input type="password" name="password" placeholder="contraseña"><br>
@@ -20,8 +25,7 @@
 
         <button type="submit" value="ENVIARDATOS">ENVIAR DATOS</button>
     </form>
-
-    <!-- PROCESO DE LA INFORMACIÓN, PHP EN VENA -->
+</div>
 
     
     
