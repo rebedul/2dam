@@ -22,6 +22,8 @@
             <th>Contraseña</th>
             <th>NombrePropio</th>
             <th>Apellidos</th>
+            <th>Borrar</th>
+            
         </tr>
         <?php
             $sql = "SELECT * from USUARIOS order by username";
@@ -33,7 +35,9 @@
                     <td><?php echo $fila['password']; ?></td>
                     <td><?php echo $fila['fname']; ?></td>
                     <td><?php echo $fila['lname']; ?></td>
+                    <td><button><a href="delete.php?username=<?php echo $fila["username"]?>">ELIMINAR</a></button></td>
                 </tr>
+
                 <?php
                     }
                 ?>
