@@ -19,7 +19,7 @@
 
     if (mysqli_query($conexion,$sql)){                      
         echo "Usuario ".$username." BORRADO correctamente."; // ¿Exito en borrado?
-        header("Refresh:0;url=read.php");                    // Demora y devolución a read.php
+        header("Refresh:0;url=read.php");                    // Demora 0 y devolución a read.php
     }
     else{
         echo "Error al borrar Usuario";

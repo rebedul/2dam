@@ -37,6 +37,39 @@ align-items: end;
   flex-direction: row-reverse
 }
 
+.grandiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.tizquierda{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tcentro{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px; */
+  /* border-style: solid; */
+  /* border-color: rgb(249, 8, 8); */
+  width: 60%;
+}
+
+.tderecha{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .contenedor{
     background-color: rgba(240, 248, 255, 0.175);
     border-radius: 2rem;
@@ -65,14 +98,6 @@ a.titulo{
     display:flex;
 }
 
-table{
-  color: white;
-  display: flex;
-  justify-content: center;
-  border: 2px;
-  border-style: solid;
-  border-color: white;
-}
 
 /* Altura cuadro búsqueda */
 .form-control, .me-2{
@@ -96,6 +121,11 @@ h1{
   justify-content: center
 }
 
+.tablaverdad, td, tr{
+  border: 1px solid;
+  border-style: double;
+  border-color: gray;
+}
 .createcon{
   margin:20px;
   display: flex;
