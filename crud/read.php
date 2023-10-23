@@ -30,7 +30,7 @@
             <th>Borrar</th>
             <th>Actualizar</th>
         </tr>
-        
+
         <?php
             $sql = "SELECT * from USUARIOS order by username";
             $resul = mysqli_query($conexion,$sql);
@@ -42,6 +42,8 @@
                     <td><?php echo $fila['fname']; ?></td>
                     <td><?php echo $fila['lname']; ?></td>
                     <td><button><a href="delete.php?username=<?php echo $fila["username"]?>">ELIMINAR</a></button></td>
+                    <td><button><a href="update.php?username=<?php echo $fila["username"]?>">ACTUALIZAR</a></button></td>
+
                 </tr>
 
                 <?php
